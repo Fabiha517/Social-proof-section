@@ -34,8 +34,8 @@ Desktop View:
 
 🔗 Links
 
-🔧 Solution URL: 
-🌐 Live Site URL: Live Page
+🔧 Solution URL: ( https://github.com/Fabiha517/Social-proof-section)
+🌐 Live Site URL: (https://Fabiha517.github.io/Social-proof-section/)
 
 🛠️ My process
 
