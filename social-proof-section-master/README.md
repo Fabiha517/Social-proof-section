@@ -30,7 +30,7 @@ This is a responsive social proof section that highlights user reviews and ratin
 📸 Screenshot
 
 Desktop View:
-![Desktop View](./social-proof-section-master/desktop.png)
+![Desktop View](desktop.png)
 
 🔗 Links
 
