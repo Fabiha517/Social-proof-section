@@ -1,0 +1,434 @@
+/* -------------------- RESET -------------------- */
+/* Reset default browser styles */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	
+}
+
+html {
+	box-sizing: border-box;
+}
+/* Inherit box-sizing for pseudo-elements */
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+/* -------------------- GLOBAL -------------------- */
+/* Base body styling */
+body {
+	font-family: "League Spartan", sans-serif;
+}
+/* -------------------- CONTAINER -------------------- */
+/* Container padding for page content  and centering*/
+.Container {
+	padding: 0rem 1.7rem 0rem 1.7rem;
+	margin: 0 auto;
+}
+
+/* -------------------- BACKGROUND IMAGES -------------------- */
+/* Background top image for mobile */
+.background_image1 {
+	background-image: url("images/bg-pattern-top-mobile.svg");
+	background-position: top-left;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 5rem;
+}
+/* Background bottom image for mobile */
+.background_image2 {
+	background-image: url("images/bg-pattern-bottom-mobile.svg");
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 5rem;
+	width: 20rem;
+	border-top-left-radius: 8rem;
+	border-top-right-radius: 8rem;
+}
+/* -------------------- HEADER -------------------- */
+/* Main heading */
+h1 {
+	text-align: center;
+	color: hsl(300, 43%, 22%);
+	margin-bottom: 1.5rem;
+	font-size: 2.4rem;
+	line-height: 1.8rem;
+	font-weight: 750;
+}
+/* Introductory paragraph */
+.Intro p {
+	color: hsl(303, 10%, 53%);
+	font-weight: 530;
+	text-align: center;
+	line-height: 1.4rem;
+	font-size: 1.1rem;
+	margin-bottom: 2rem;
+}
+
+/* -------------------- RATINGS -------------------- */
+/* Rating card styles */
+.rating {
+	text-align: center;
+	margin-bottom: 1rem;
+	background-color: hsl(300, 24%, 96%);
+	height: 5rem;
+	border-radius: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: hsl(300, 43%, 22%);
+	font-weight: 750;
+	font-size: 1rem;
+	
+}
+/* Star image sizing */
+.Star-image img {
+	width: 1.2rem;
+	height: auto;
+}
+
+.Star-image {
+	/* position: relative; */
+	z-index: 1;
+}
+/* Spacing between stars and rating text */
+.rating p {
+	margin-top: 0.6rem;
+}
+/* Small spacing adjustment */
+.distance {
+	margin-left: 0.2rem;
+}
+
+/* -------------------- REVIEWS -------------------- */
+/* Review card styles */
+.Review {
+	background-color: hsl(300, 43%, 22%);
+	color: hsl(0, 0%, 100%);
+	margin-bottom: 1rem;
+	height: 16rem;
+	border-radius: 0.5rem;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 4rem 1.8rem 4rem 1.8rem;
+	text-align: left;
+}
+/* First review spacing */
+.Review1 {
+	margin-top: 2rem;
+}
+
+/* Review text styles */
+.Review p {
+	line-height: 1.5rem;
+	font-size: 1.05rem;
+	margin-bottom: 1rem;
+}
+
+/* -------------------- USER INFO -------------------- */
+/* User image styles */
+.User_image {
+	height: 2.8rem;
+	width: 2.8rem;
+	border-radius: 50%;
+	position: relative;
+	top: 2.5rem;
+	margin-right: 1rem;
+}
+
+/* User profile (name + role) positioning */
+.user-profile {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	left: 4rem;
+}
+/* User name style */
+.name {
+	color: hsl(0, 0%, 100%);
+	font-weight: 600;
+	font-size: 1.05rem;
+}
+
+/* User role style */
+.role {
+	color: hsl(333, 80%, 67%);
+	font-size: 1.05rem;
+	font-weight: 250;
+	position: relative;
+	top: -0.5rem;
+}
+
+/* -------------------- ATTRIBUTION -------------------- */
+.attribution {
+	text-align: center;
+	padding-bottom: 1rem;
+	font-size: 0.8rem;
+}
+
+.attribution a {
+	color: hsl(300, 43%, 22%);
+	text-decoration: none;
+	font-weight: 600;
+}
+/* -------------------- HOVERS -------------------- */
+.rating:hover {
+	transform: translateY(-5px);
+	box-shadow: 0px 8px 20px hsl(300, 2%, 21%);
+	transition: all 0.3s ease;
+}
+.Star-image img:hover {
+	transform: scale(1.2);
+	transition: transform 0.2s ease-in-out;
+}
+.rating p:hover {
+	transform: scale(1.1);
+	transition: transform 0.2s ease-in-out;
+}
+.Review:hover {
+	transform: translateY(-5px);
+	box-shadow: 0px 8px 20px hsl(300, 2%, 21%);
+	transition: all 0.3s ease;
+}
+
+/* -------------------- MEDIA QUERIES -------------------- */
+@media (max-width:767){
+	.Container{
+		padding:0rem 1.8rem
+	}
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 768px) {
+	/* Container adjustments */
+	.Container {
+		padding: 0rem 3.5rem;
+		margin: 0 auto;
+		max-width: 85%;
+		position: relative;
+	}
+
+	/* Desktop top background image */
+	.background_image1 {
+		position: absolute;
+		top: 0rem;
+		background-image: url("images/bg-pattern-top-desktop.svg");
+		right: 15rem;
+		height: 15rem;
+		width: 40rem;
+		z-index: 1;
+	}
+
+	/* Desktop bottom background image */
+	.background_image2 {
+		position: absolute;
+		background-image: url("images/bg-pattern-bottom-desktop.svg");
+		height: 12rem;
+		right: 5rem;
+	}
+
+	header {
+		margin-top: 10rem;
+		z-index: 2;
+	}
+	h1 {
+		font-size: 3rem;
+		line-height: 2.5rem;
+		margin-bottom: 0.1rem;
+		z-index: 2;
+		position: relative;
+		top: -3rem;
+	}
+	.Intro p {
+		font-size: 1.4rem;
+		line-height: 1.9rem;
+	}
+	.rating {
+		height: 6rem;
+	}
+	.Star-image img {
+		width: 1.5rem;
+	}
+	.distance {
+		margin-left: 0.4rem;
+		margin-bottom: 0.2rem;
+	}
+	.rating p {
+		font-size: 1.2rem;
+	}
+	.Review1 {
+		margin-top: 3rem;
+	}
+	.Review {
+		padding: 2rem 3rem;
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+	}
+	.Review .User_image {
+		left: 0.6rem;
+		height: 3.5rem;
+		width: 3.5rem;
+		top: 2rem;
+	}
+	.Review .user-profile {
+		left: 6rem;
+		top: -1rem;
+	}
+
+	.name {
+		font-size: 1.2rem;
+	}
+
+	.role {
+		font-size: 1.2rem;
+	}
+
+	.Review p {
+		line-height: 2rem;
+		font-size: 1.3rem;
+		font-weight: 250;
+	}
+
+	.attribution {
+		font-size: 1rem;
+	}
+}
+
+/* Large screens (desktops) */
+@media (min-width: 1440px) {
+	/* Main layout row */
+	.main-layout {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		gap: 4rem;
+		position: relative;
+	}
+
+	/* Container for large screens */
+	.Container {
+		max-width: 85%;
+		margin: 0 auto;
+		padding-bottom: 5rem;
+		position: relative;
+	}
+	.background_image1 {
+		background-image: url("images/bg-pattern-top-desktop.svg");
+		position: relative;
+		z-index: 1;
+		width: 55rem;
+	}
+	header {
+		position: absolute;
+		top: -3rem;
+		flex: 1;
+		max-width: 40%;
+		z-index: 2;
+		margin: auto;
+	}
+	h1 {
+		text-align: left;
+		font-size: 4rem;
+		line-height: 3.7rem;
+	}
+	.Intro p {
+		text-align: left;
+		font-size: 1.2rem;
+	}
+
+	/* Ratings section layout */
+	.Ratings {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		align-items: flex-end;
+		justify-content: flex-start;
+		position: relative;
+		top: -3rem;
+	}
+	.rating {
+		height: 4rem;
+		display: flex;
+		gap: 2rem;
+		width: 27rem;
+		flex-direction: row;
+		gap: 1rem;
+	}
+	.Rating_box1 {
+		position: relative;
+		left: -6rem;
+	}
+	.Rating_box2 {
+		position: relative;
+		left: -3rem;
+	}
+
+	.rating p {
+		margin-top: 0rem;
+	}
+	.Star-image img {
+		align-self: center;
+	}
+	.Star-image img {
+		width: 1.1rem;
+	}
+
+	/* Review section layout */
+	.Reviews {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 0rem;
+		z-index: 2;
+	}
+
+	.Review {
+		width: 32%;
+		position: relative;
+	}
+	.Review p {
+		width: 100%;
+		line-height: 1.4rem;
+		font-size: 1.05rem;
+	}
+
+	.Review2 {
+		position: relative;
+
+		top: 4rem;
+	}
+	.Review3 {
+		position: relative;
+		top: 5.5rem;
+	}
+	.background_image2 {
+		background-image: url("images/bg-pattern-bottom-desktop.svg");
+		position: fixed;
+		bottom: 0rem;
+		z-index: 1;
+		width: 55rem;
+		left: 18rem;
+		height: 10rem;
+	}
+
+	/* Footer styles */
+	.footer {
+		position: absolute;
+		bottom: 0rem;
+		font-size: 1.2rem;
+		text-align: center;
+	}
+	.footer a {
+		color: hsl(300, 43%, 22%);
+		text-decoration: none;
+		font-weight: 600;
+	}
+}
